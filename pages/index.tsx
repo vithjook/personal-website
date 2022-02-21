@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
       <header>
         <nav className="container flex items-center py-4 mt-4 sm:mt-12"> 
-         <div className="py-1"><Image src="/logo-bookmark.svg" alt="mylogo" width={420} height={110}/> </div>
+         <div className="py-1"><Image src="/logo.png" alt="mylogo" width={222} height={44} /> </div>
          <ul className = "hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
            <li className="cursor-pointer">Features</li>
            <li className="cursor-pointer">Pricing</li>
