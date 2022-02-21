@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import PersonalSlogan from '../components/PersonalSlogan'
 
 const Home: NextPage = () => {
   return (
@@ -13,16 +14,25 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <body className="font-Poppins">
+
       <header>
-        <nav className="container p-0"> 
-         Testing
+        <nav className="container flex items-center py-4 mt-4 sm:mt-12"> 
+         <div className="py-1"><Image src="/logo-bookmark.svg" alt="mylogo" width={420} height={110}/> </div>
+         <ul className = "hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
+           <li className="cursor-pointer">Features</li>
+           <li className="cursor-pointer">Pricing</li>
+           <li className="cursor-pointer">Contact</li>
+           <button type="button" className="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+         </ul>
+         <div className="flex sm:hidden flex-1 justify-end">
+          <i className="text-2xl fas fa-bars"></i>
+        </div>
         </nav>
       </header>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-           <a>"The World is one big data problem"</a>
-        </h1>
+        <PersonalSlogan />
         <h2>-Dr.Andrew Mcaffee</h2>
 
         <p className={styles.description}>
@@ -84,6 +94,7 @@ const Home: NextPage = () => {
           About Me
         </a>
       </footer>
+      </body>
     </div>
   )
 }
