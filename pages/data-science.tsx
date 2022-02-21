@@ -14,9 +14,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-           <a>"The World is one big data problem"</a>
+          Welcome to <a href="https://nextjs.org">Data Science!</a>
         </h1>
-        <h2>-Dr.Andrew Mcaffee</h2>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -56,25 +55,14 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="http://localhost:3000/datascience"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Data Science  
-        </a>
-        <a
-          href="http://localhost:3000/typescript"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Type Script
-        </a>
-        <a
-          href="http://localhost:3000/about"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          About Me
+          Powered by{' '}
+          <span className={styles.logo}>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
         </a>
       </footer>
     </div>
