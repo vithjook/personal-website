@@ -23,7 +23,7 @@ const Home: NextPage = () => {
            <li className="cursor-pointer">Features</li>
            <li className="cursor-pointer">Pricing</li>
            <li className="cursor-pointer">Contact</li>
-           <button type="button" className="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+           <button type="button" className="bg-red-500 text-white rounded-full px-7 py-3 uppercase">Login</button>
          </ul>
          <div className="flex sm:hidden flex-1 justify-end">
           <i className="text-2xl fas fa-bars"></i>
