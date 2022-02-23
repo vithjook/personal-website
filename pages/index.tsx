@@ -284,9 +284,75 @@ const Home: NextPage = () => {
 
         </section>
 
-        <section>
-          
-        </section>
+        <section className="bg-white py-20">
+      <div className="container">
+       
+        <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+          <h1 className="text-3xl text-center text-blue-400">Frequently Asked Questions</h1>
+          <p className="text-center text-gray-400 mt-4">
+            Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+          </p>
+        </div>
+    
+        <div className="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+          <div className="flex items-center border-b py-4">
+            <span className="flex-1">What is a Bookmark?</span>
+            <i className="text-purple-400 fas fa-chevron-down"></i>
+          </div>
+          <div className="flex items-center border-b py-4">
+            <span className="flex-1">How can I request a new browser?</span>
+            <i className="text-purple-400 fas fa-chevron-down"></i>
+          </div>
+          <div className="flex items-center border-b py-4">
+            <span className="flex-1">Is there a mobile app?</span>
+            <i className="text-purple-400 fas fa-chevron-down"></i>
+          </div>
+          <div className="flex items-center border-b py-4">
+            <span className="flex-1">What about other Chromium browsers?</span>
+            <i className="text-purple-400 fas fa-chevron-down"></i>
+          </div>
+          <MoreInfoButton/>
+        </div>
+      </div>
+    </section>
+
+   
+    <section className="bg-purple-400 text-white py-20">
+      <div className="container">
+        <div className="sm:w-3/4 lg:w-2/4 mx-auto">
+          <p className="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
+          <h1 className="text-3xl text-center">Stay up-to-date with what we’re doing</h1>
+          <div className="flex flex-col sm:flex-row gap-6 mt-8">
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              className="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+            />
+            <button type="button" className="btn bg-red-400 hover:bg-white hover:text-black">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <footer className="bg-blue py-8">
+      <div className="container flex flex-col md:flex-row items-center">
+        <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+          <img src="./logo-bookmark-white.png" alt="" />
+          <ul className="flex text-white uppercase gap-12 text-xs">
+            <li className="cursor-pointer">Features</li>
+            <li className="cursor-pointer">Pricing</li>
+            <li className="cursor-pointer">Contact</li>
+          </ul>
+        </div>
+        <div className="flex gap-10 mt-12 md:mt-0">
+          <li><i className="text-white text-2xl fab fa-twitter"></i></li>
+          <li><i className="text-white text-2xl fab fa-facebook-square"></i></li>
+        </div>
+      </div>
+    </footer>
 
         <main className={styles.main}>
           <PersonalSlogan />
