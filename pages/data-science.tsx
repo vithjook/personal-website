@@ -20,10 +20,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <body className="font-Poppins">
+
+      <div className="font-Poppins overflow-hidden">
         <header>
-          <nav className="container flex items-center py-4 mt-4 sm:mt-12 bg-slate-600">
+          <nav className="flex items-center py-4 pt-4 sm:pt-12 bg-slate-600">
             <div className="py-1">
               <Image src="/logo.png" alt="mylogo" width={222} height={44} />{" "}
             </div>
@@ -44,21 +44,18 @@ const Home: NextPage = () => {
           </nav>
         </header>
 
-        <section className="relative bg-slate-600">
-          <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
-            <div className="flex flex-1 flex-col itmens-center lg:itmens-start">
-              <h2 className="text-blue-400 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
-                The Data Sciencentist
-              
+        {/* padding */}
+        {/* margin */}
 
-              <i className="fa-brands fa-react"></i>
-              <i className="fa-brands fa-python"></i>
-
-
-
-
+        <section className="relative bg-slate-200">
+          <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 py-12 lg:py-28">
+            <div className="flex flex-1 flex-col itmens-center lg:itmens-start ">
+              <h2 className="text-blue-400 text-3xl pd:text-4 lg:text-5xl text-center lg:text-left pb-6">
+                The Data Scientist
+                <i className="fa-brands fa-react"></i>
+                <i className="fa-brands fa-python"></i>
               </h2>
-              <p className="text-gray-600 text-lg text-center lg:text-left mb-6">
+              <p className="text-gray-600 text-lg text-center lg:text-left pb-6">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
@@ -79,19 +76,20 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+            <div className="flex relative justify-center flex-1">
               <img
-                className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-full border-8 border-sky-500 shadow-blue-500/50"
+                className="rounded-full w-64 h-64"
                 src="/photo_2022-02-23 12.39.49.jpeg"
                 alt="bild"
               />
+              <div className="border-8 absolute w-64 h-64 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  border-sky-500 hover:animate-ripple z-10" />
             </div>
           </div>
 
-          <div
+          {/* <div
             className="
           hidden
-          md:block
+          pd:block
           overflow-auto
           bg-purple-400
           rounded-l-full
@@ -104,24 +102,24 @@ const Home: NextPage = () => {
           -bottom-28
           lg:-right-36
         "
-          ></div>
+          ></div> */}
         </section>
 
-        <section className="bg-slate-900 py-20 mt-20 lg:mt-60">
-          <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <section className="bg-slate-900 py-20 pt-20 lg:pt-60">
+          <div className="sm:w-3/4 lg:w-5/12 px-auto px-2">
             <h1 className="text-3xl text-center text-blue-300">Features</h1>
-            <p className="text-center text-gray-400 mt-4">
+            <p className="text-center text-gray-400 pt-4">
               Our aim is to make it quick and easy for you to access your
               favourite websites. Your bookmarks sync between your devices so
               you can access them on the go.
             </p>
           </div>
 
-          <div className="relative mt-20 lg:mt-24">
+          <div className="relative pt-20 lg:pt-24">
             <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-              <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+              <div className="flex flex-1 justify-center z-10 pb-10 lg:pb-0">
                 <img
-                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-max md:h-max"
+                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 pd:w-max pd:h-max"
                   src="/illustration-features-tab-1.png"
                   alt="illustration"
                 />
@@ -131,7 +129,7 @@ const Home: NextPage = () => {
                 <h1 className="text-3xl text-blue-400">
                   Bookmark in one click
                 </h1>
-                <p className="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                <p className="text-gray-500 py-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                   Organize your bookmarks however you like. Our simple
                   drag-and-drop interface gives you complete control over how
                   you manage your favourite sites.
@@ -155,11 +153,11 @@ const Home: NextPage = () => {
             ></div>
           </div>
 
-          <div className="relative mt-20 lg:mt-52">
+          <div className="relative pt-20 lg:pt-52">
             <div className="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
-              <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+              <div className="flex flex-1 justify-center z-10 pb-10 lg:pb-0">
                 <img
-                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-max md:h-max"
+                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 pd:w-max pd:h-max"
                   src="/illustration-features-tab-2.png"
                   alt="illustration"
                 />
@@ -167,7 +165,7 @@ const Home: NextPage = () => {
 
               <div className="flex flex-1 flex-col items-center lg:items-start">
                 <h1 className="text-3xl text-blue-400"> Intelligent search </h1>
-                <p className="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                <p className="text-gray-500 py-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                   Our powerful search feature will help you find saved sites in
                   no time at all. No need to crawl through all of your
                   bookmarks.
@@ -191,11 +189,11 @@ const Home: NextPage = () => {
             ></div>
           </div>
 
-          <div className="relative mt-20 lg:mt-52">
+          <div className="relative pt-20 lg:pt-52">
             <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
-              <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+              <div className="flex flex-1 justify-center z-10 pb-10 lg:pb-0">
                 <img
-                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-max md:h-max"
+                  className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 pd:w-max pd:h-max"
                   src="/illustration-features-tab-3.png"
                   alt="illustration"
                 />
@@ -203,7 +201,7 @@ const Home: NextPage = () => {
 
               <div className="flex flex-1 flex-col items-center lg:items-start">
                 <h1 className="text-3xl text-blue-400">Share your bookmarks</h1>
-                <p className="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                <p className="text-gray-500 py-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                   Easily share your bookmarks and collections with others.
                   Create a shareable link that you can send at the click of a
                   button.
@@ -228,142 +226,167 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-
-      <section className="py-20 mt-20 bg-slate-600">
-      
-      <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 className="text-3xl text-center text-blue-400">Download the extension</h1>
-        <p className="text-center text-gray-400 mt-4">
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
-          prioritize.
-        </p>
-      </div>
-      
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
-          
-          <div className="flex flex-col rounded-md shadow-md lg:mb-16">
-            <div className="p-6 flex flex-col items-center">
-              <img src="/logo-chrome.svg" alt="" />
-              <h3 className="mt-5 mb-2 text-blue-400 text-lg">Add to Chrome</h3>
-              <p className="mb-2 text-gray-400 font-light">Minimum version 62</p>
-            </div>
-            <hr className="border-b border-white" />
-            <div className="flex p-6">
-              <button type="button" className="flex-1 btn btn-purple hover:bg-white hover:text-black">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
-        
-          
-        
-          
-          <div className="flex flex-col rounded-md shadow-md lg:my-8">
-            <div className="p-6 flex flex-col items-center">
-              <img src="/logo-firefox.svg" alt="" />
-              <h3 className="mt-5 mb-2 text-blue-400 text-lg">Add to Firefox</h3>
-              <p className="mb-2 text-gray-400 font-light">Minimum version 62</p>
-            </div>
-            <hr className="border-b border-white" />
-            <div className="flex p-6">
-              <button type="button" className="flex-1 btn btn-purple hover:bg-white hover:text-black">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
-          
-        
-        
-          
-          <div className="flex flex-col rounded-md shadow-md lg:mt-16">
-            <div className="p-6 flex flex-col items-center">
-              <img src="/logo-opera.svg" alt="" />
-              <h3 className="mt-5 mb-2 text-blue-400 text-lg">Add to Opera</h3>
-              <p className="mb-2 text-gray-400 font-light">Minimum version 62</p>
-            </div>
-            <hr className="border-b border-white" />
-            <div className="flex p-6">
-              <button type="button" className="flex-1 btn btn-purple hover:bg-white hover:text-black">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
+        <section className="bg-slate-600 py-20 pt-20 ">
+          <div className="sm:w-3/4 lg:w-5/12 px-auto px-2 ">
+            <h1 className="text-3xl text-center text-blue-400">
+              Download the extension
+            </h1>
+            <p className="text-center text-gray-400 pt-4">
+              We’ve got more browsers in the pipeline. Please do let us know if
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
           </div>
 
+          <div className="container px-auto grid grid-cols-1 pd:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg pt-16">
+            <div className="flex flex-col rounded-pd shadow-pd lg:pb-16">
+              <div className="p-6 flex flex-col items-center">
+                <img src="/logo-chrome.svg" alt="" />
+                <h3 className="pt-5 pb-2 text-blue-400 text-lg">
+                  Add to Chrome
+                </h3>
+                <p className="pb-2 text-gray-400 font-light">
+                  Minimum version 62
+                </p>
+              </div>
+              <hr className="border-b border-white" />
+              <div className="flex p-6">
+                <button
+                  type="button"
+                  className="flex-1 btn btn-purple hover:bg-white hover:text-black"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-pd shadow-md lg:py-8">
+              <div className="p-6 flex flex-col items-center">
+                <img src="/logo-firefox.svg" alt="" />
+                <h3 className="pt-5 pb-2 text-blue-400 text-lg">
+                  Add to Firefox
+                </h3>
+                <p className="pb-2 text-gray-400 font-light">
+                  Minimum version 62
+                </p>
+              </div>
+              <hr className="border-b border-white" />
+              <div className="flex p-6">
+                <button
+                  type="button"
+                  className="flex-1 btn btn-purple hover:bg-white hover:text-black"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-md shadow-md lg:pt-16">
+              <div className="p-6 flex flex-col items-center">
+                <img src="/logo-opera.svg" alt="" />
+                <h3 className="pt-5 pb-2 text-blue-400 text-lg">
+                  Add to Opera
+                </h3>
+                <p className="pb-2 text-gray-400 font-light">
+                  Minimum version 62
+                </p>
+              </div>
+              <hr className="border-b border-white" />
+              <div className="flex p-6">
+                <button
+                  type="button"
+                  className="flex-1 btn btn-purple hover:bg-white hover:text-black"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section className="bg-white py-20">
-      <div className="container">
-       
-        <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-          <h1 className="text-3xl text-center text-blue-400">Frequently Asked Questions</h1>
-          <p className="text-center text-gray-400 mt-4">
-            Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
-          </p>
-        </div>
-    
-        <div className="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
-          <div className="flex items-center border-b py-4">
-            <span className="flex-1">What is a Bookmark?</span>
-            <i className="text-purple-400 fas fa-chevron-down"></i>
-          </div>
-          <div className="flex items-center border-b py-4">
-            <span className="flex-1">How can I request a new browser?</span>
-            <i className="text-purple-400 fas fa-chevron-down"></i>
-          </div>
-          <div className="flex items-center border-b py-4">
-            <span className="flex-1">Is there a mobile app?</span>
-            <i className="text-purple-400 fas fa-chevron-down"></i>
-          </div>
-          <div className="flex items-center border-b py-4">
-            <span className="flex-1">What about other Chromium browsers?</span>
-            <i className="text-purple-400 fas fa-chevron-down"></i>
-          </div>
-          <MoreInfoButton/>
-        </div>
-      </div>
-    </section>
+        <section className="py-20 bg-slate-600">
+          <div className="container">
+            <div className="sm:w-3/4 lg:w-5/12 px-auto px-2">
+              <h1 className="text-3xl text-center text-blue-400">
+                Frequently Asked Questions
+              </h1>
+              <p className="text-center text-gray-400 mt-4">
+                Here are some of our FAQs. If you have any other questions you’d
+                like answered please feel free to email us.
+              </p>
+            </div>
 
-   
-    <section className="bg-purple-400 text-white py-20">
-      <div className="container">
-        <div className="sm:w-3/4 lg:w-2/4 mx-auto">
-          <p className="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
-          <h1 className="text-3xl text-center">Stay up-to-date with what we’re doing</h1>
-          <div className="flex flex-col sm:flex-row gap-6 mt-8">
-            <input
-              type="text"
-              placeholder="Enter your email address"
-              className="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
-            />
-            <button type="button" className="btn bg-red-400 hover:bg-white hover:text-black">
-              Contact Us
-            </button>
+            <div className="flex flex-col sm:w-3/4 lg:w-5/12 pt-12 mx-auto">
+              <div className="flex items-center border-b py-4">
+                <span className="flex-1">What is a Bookmark?</span>
+                <i className="text-purple-400 fas fa-chevron-down"></i>
+              </div>
+              <div className="flex items-center border-b py-4">
+                <span className="flex-1">How can I request a new browser?</span>
+                <i className="text-purple-400 fas fa-chevron-down"></i>
+              </div>
+              <div className="flex items-center border-b py-4">
+                <span className="flex-1">Is there a mobile app?</span>
+                <i className="text-purple-400 fas fa-chevron-down"></i>
+              </div>
+              <div className="flex items-center border-b py-4">
+                <span className="flex-1">
+                  What about other Chromium browsers?
+                </span>
+                <i className="text-purple-400 fas fa-chevron-down"></i>
+              </div>
+              <MoreInfoButton />
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-   
-    <footer className="bg-blue py-8">
-      <div className="container flex flex-col md:flex-row items-center">
-        <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-          <img src="./logo-bookmark-white.png" alt="" />
-          <ul className="flex text-white uppercase gap-12 text-xs">
-            <li className="cursor-pointer">Features</li>
-            <li className="cursor-pointer">Pricing</li>
-            <li className="cursor-pointer">Contact</li>
-          </ul>
-        </div>
-        <div className="flex gap-10 mt-12 md:mt-0">
-          <li><i className="text-white text-2xl fab fa-twitter"></i></li>
-          <li><i className="text-white text-2xl fab fa-facebook-square"></i></li>
-        </div>
-      </div>
-    </footer>
+        <section className="bg-purple-400 text-white py-20">
+          <div className="container">
+            <div className="sm:w-3/4 lg:w-2/4 px-auto">
+              <p className="font-light uppercase text-center pb-8">
+                35,000+ ALREADY JOINED
+              </p>
+              <h1 className="text-3xl text-center">
+                Stay up-to-date with what we’re doing
+              </h1>
+              <div className="flex flex-col sm:flex-row gap-6 pt-8">
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  className="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                />
+                <button
+                  type="button"
+                  className="btn bg-red-400 hover:bg-white hover:text-black"
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
 
-     
-        <footer>
+        <footer className="bg-blue-500 py-8">
+          <div className="container flex flex-col pd:flex-row items-center">
+            <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+              {/* <img src="/logo.png" alt="" /> */}
+              <ul className="flex text-white uppercase gap-12 text-xs">
+                <li className="cursor-pointer">Features</li>
+                <li className="cursor-pointer">Pricing</li>
+                <li className="cursor-pointer">Contact</li>
+              </ul>
+            </div>
+            <div className="flex gap-10 pt-12 pd:mt-0">
+              <li>
+                <i className="text-white text-2xl cursor-pointer fab fa-twitter"></i>
+              </li>
+              <li>
+                <i className="text-white text-2xl cursor-pointer fab fa-facebook-square"></i>
+              </li>
+            </div>
+          </div>
+        </footer>
+
+        {/* <footer>
           <a
             href="http://localhost:3000/data-science"
             target="_blank"
@@ -385,8 +408,8 @@ const Home: NextPage = () => {
           >
             About Me
           </a>
-        </footer>
-      </body>
+        </footer> */}
+      </div>
     </div>
   );
 };

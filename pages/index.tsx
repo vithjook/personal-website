@@ -76,7 +76,7 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            <div className="flex relative justify-center flex-1 bg-yellow-500">
+            <div className="flex relative justify-center flex-1">
               <img
                 className="rounded-full w-64 h-64"
                 src="/photo_2022-02-23 12.39.49.jpeg"
