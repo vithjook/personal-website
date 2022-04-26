@@ -4,6 +4,7 @@ import Image from "next/image";
 import PersonalSlogan from "../components/PersonalSlogan";
 import { relative } from "path/posix";
 import MoreInfoButton from "../components/MoreInfoButton";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -63,13 +64,13 @@ const Home: NextPage = () => {
               <div className="flex justify-center flex-wrap gap-6">
                 <button
                   type="button"
-                  className="btn btn-purple bg-purple-500 hover:bg-white hover:text-black"
+                  className="btn btn-purple rounded-md px-7 py-3 bg-purple-500 text-white hover:bg-white hover:text-black"
                 >
                   Get it on Chrome
                 </button>
                 <button
                   type="button"
-                  className="btn btn-purple text-black bg-white hover:bg-purple-500 hover:text-white"
+                  className="rounded btn btn-purple px-7 py-3 text-black bg-white hover:bg-purple-500 hover:text-white"
                 >
                   Get it on Firefox
                 </button>
@@ -77,15 +78,23 @@ const Home: NextPage = () => {
             </div>
 
             <div className="flex relative justify-center flex-1">
+              {/* <button className="ripple-bg-gray-300">
+                Hover me for a lighter background, click me for a ripple effect
+              </button> */}
+
               <img
                 className="rounded-full w-64 h-64"
                 src="/photo_2022-02-23 12.39.49.jpeg"
                 alt="bild"
               />
-              <div className="border-8 absolute w-64 h-64 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  border-sky-500 hover:animate-ripple z-10" />
+              <div
+                className="absolute w-96 h-96 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+              rounded-full hover:ripple-bg-rose-900 z-10"
+              />
             </div>
           </div>
-
+          width: 1em; height: 1em; border-radius: 50%; animation: ripple 0.7s
+          linear infinite;
           {/* <div
             className="
           hidden
@@ -339,9 +348,9 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="bg-purple-400 text-white py-20">
-          <div className="container">
-            <div className="sm:w-3/4 lg:w-2/4 px-auto">
+        <section className="bg-black text-white py-20">
+          <div className="container mx-auto">
+            <div className="sm:w-3/4 lg:w-2/4 mx-auto">
               <p className="font-light uppercase text-center pb-8">
                 35,000+ ALREADY JOINED
               </p>
@@ -356,7 +365,7 @@ const Home: NextPage = () => {
                 />
                 <button
                   type="button"
-                  className="btn bg-red-400 hover:bg-white hover:text-black"
+                  className="btn bg-red-400 hover:text-black"
                 >
                   Contact Us
                 </button>
@@ -364,27 +373,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
-        <footer className="bg-blue-500 py-8">
-          <div className="container flex flex-col pd:flex-row items-center">
-            <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-              {/* <img src="/logo.png" alt="" /> */}
-              <ul className="flex text-white uppercase gap-12 text-xs">
-                <li className="cursor-pointer">Features</li>
-                <li className="cursor-pointer">Pricing</li>
-                <li className="cursor-pointer">Contact</li>
-              </ul>
-            </div>
-            <div className="flex gap-10 pt-12 pd:mt-0">
-              <li>
-                <i className="text-white text-2xl cursor-pointer fab fa-twitter"></i>
-              </li>
-              <li>
-                <i className="text-white text-2xl cursor-pointer fab fa-facebook-square"></i>
-              </li>
-            </div>
-          </div>
-        </footer>
+        <Footer />
 
         {/* <footer>
           <a

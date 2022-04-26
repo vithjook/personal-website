@@ -1,5 +1,10 @@
 const MoreInfoButton = () => (
-<button type="button" className="btn btn-purple hover:bg-white hover:text-black">More Info</button>
-)
+  <button
+    type="button"
+    className="rounded btn btn-purple px-7 py-3 hover:bg-white hover:text-black"
+  >
+    More Info
+  </button>
+);
 
-export default MoreInfoButton
+export default MoreInfoButton;

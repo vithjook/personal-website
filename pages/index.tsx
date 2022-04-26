@@ -63,13 +63,13 @@ const Home: NextPage = () => {
               <div className="flex justify-center flex-wrap gap-6">
                 <button
                   type="button"
-                  className="btn btn-purple bg-purple-500 hover:bg-white hover:text-black"
+                  className="rounded btn btn-purple px-7 py-3 bg-purple-500 hover:bg-white hover:text-black"
                 >
                   Get it on Chrome
                 </button>
                 <button
                   type="button"
-                  className="btn btn-purple text-black bg-white hover:bg-purple-500 hover:text-white"
+                  className="rounded btn btn-purple px-7 py-3 text-black bg-white hover:bg-purple-500 hover:text-white"
                 >
                   Get it on Firefox
                 </button>
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                 src="/photo_2022-02-23 12.39.49.jpeg"
                 alt="bild"
               />
-              <div className="border-8 absolute w-64 h-64 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  border-sky-500 hover:animate-ping z-10" />
+              <div className="border-8 absolute w-64 h-64 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  border-sky-500  z-10" />
             </div>
           </div>
 
